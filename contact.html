@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - TechBridge Atlanta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <style>
+    :root {--blue-dark:#235390;--blue-main:#49a6e9;--blue-light:#d8ecfb;--grey-bg:#f8fafd;--radius:16px;}
+    body {margin:0;font-family:'Poppins',Arial,sans-serif;background:var(--grey-bg);color:#222;}
+    header {background:linear-gradient(90deg,var(--blue-dark)70%,var(--blue-main)100%);color:#fff;padding:54px 18px 40px 18px;text-align:center;border-bottom-left-radius:var(--radius);border-bottom-right-radius:var(--radius);box-shadow:0 5px 18px rgba(35,83,144,0.18);}
+    .site-title {font-size:2.4rem;font-weight:700;margin-bottom:8px;}
+    nav {background:#fff;display:flex;justify-content:center;gap:18px;box-shadow:0 2px 8px rgba(35,83,144,0.08);border-radius:var(--radius);margin:0 18px;position:relative;top:-26px;z-index:4;}
+    nav a {color:var(--blue-dark);text-decoration:none;font-weight:600;font-size:1.15em;border-radius:var(--radius);padding:14px 32px 13px 32px;transition:background .2s,color .2s;}
+    nav a.active,nav a:hover{background:var(--blue-light);color:var(--blue-main);}
+    main {max-width:700px;margin:44px auto 32px auto;padding:32px 20px;background:#fff;border-radius:var(--radius);box-shadow:0 3px 18px rgba(35,83,144,0.13);}
+    .card-section {background:var(--blue-light);border-radius:var(--radius);box-shadow:0 2px 12px #49a6e922;padding:36px 32px 28px 32px;margin-bottom:34px;}
+    .heading-large {font-size:2rem;font-weight:700;margin-bottom:18px;letter-spacing:.01em;color:var(--blue-dark);}
+    .form-label {font-weight:600;}
+    form {display:flex;flex-direction:column;gap:10px;}
+    input,textarea{width:100%;padding:12px;border-radius:var(--radius);border:1px solid #b2c6db;font-size:16px;background:#f4f8fb;}
+    button {background:var(--blue-main);color:#fff;padding:13px 0;font-size:1.1rem;font-weight:700;border:none;outline:none;border-radius:var(--radius);margin-top:10px;cursor:pointer;transition:background .2s;}
+    button:hover{background:var(--blue-dark);}
+    footer {background:var(--blue-dark);color:#fff;text-align:center;padding:30px 0 10px 0;border-top-right-radius:var(--radius);border-top-left-radius:var(--radius);font-size:1.08rem;margin:0 14px;}
+    .map-card {padding:0;margin:0 auto 24px auto;box-shadow:0 0 0 transparent;background:transparent;}
+    .heading-med{font-size:1.29rem;font-weight:600;margin-bottom:12px;margin-top:18px;color:var(--blue-main);}
+    @media(max-width:700px){main{padding:7px;}}
+    @media(max-width:555px){nav{flex-direction:column;gap:1px;}nav a{padding:13px 0;}.card-section{padding:11px;}.heading-large{font-size:1rem;}main{padding:5px;}}
+  </style>
+</head>
+<body>
+  <header>
+    <header>
+    <img src="TechBridge-Atlanta.png" alt="TechBridge Atlanta Logo" style="height:180px; margin-bottom:10px; border-radius:20px; display:block; margin-left:auto; margin-right:auto;">
+    <div class="site-subtitle">Contact Us</div>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+  <main>
+    <section class="card-section">
+      <div class="heading-large">Send Us a Message</div>
+      <form method="POST" action="mailto:atl772880@gmail.com" enctype="text/plain">
+        <label for="name" class="form-label">Your Name *</label>
+        <input type="text" id="name" name="Name" required>
+        <label for="email" class="form-label">Your Email *</label>
+        <input type="email" id="email" name="Email" required>
+        <label for="message" class="form-label">Message *</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+        <button type="submit">Send Request</button>
+      </form>
+      
+    </section>
+    <section class="card-section map-card">
+      <div class="heading-med">Our Atlanta Location</div>
+      <iframe src="https://www.google.com/maps?q=Atlanta,GA&hl=en&z=12&output=embed" width="100%" height="230" style="border:0; border-radius:var(--radius);" allowfullscreen loading="lazy"></iframe>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 TechBridge Atlanta. All Rights Reserved.
+  </footer>
+</body>
+</html>

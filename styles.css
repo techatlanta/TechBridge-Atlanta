@@ -1,0 +1,15 @@
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f7f7f7; color: #333;}
+header { background: #3a6ea5; color: #fff; padding: 40px 20px; text-align: center; }
+nav { background: #26496b; display: flex; justify-content: center;}
+nav a { color: #fff; text-decoration: none; padding: 15px 20px; transition: background 0.3s;}
+nav a:hover { background: #15345a;}
+main { max-width: 900px; margin: 30px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);}
+section { margin-bottom: 30px; }
+h1, h2 { margin-top: 0;}
+.service-list { list-style: disc; margin-left: 24px;}
+footer { background: #26496b; color: #fff; text-align: center; padding: 20px 0; font-size: 14px;}
+@media (max-width: 600px) {
+  main { padding: 10px;}
+  nav { flex-direction: column;}
+  nav a { padding: 10px; text-align: center;}
+}
