@@ -8,6 +8,15 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 
 <body>
@@ -16,6 +25,9 @@
       <img src="TechBridge-Atlanta.png" alt="TechBridge Atlanta Logo" class="logo-img">
       <span class="site-title-small">TechBridge Atlanta</span>
     </div>
+    <button class="theme-toggle" aria-label="Toggle Dark Mode">
+      <i class="fas fa-moon"></i>
+    </button>
     <button class="mobile-menu-btn" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </button>
@@ -55,6 +67,56 @@
       </ul>
       <div style="text-align: center; margin-top: 2rem;">
         <a href="contact.html" class="btn btn-primary">Ask Us Now</a>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="heading-large" style="text-align: center;">Service Packages</div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="price-header">
+            <h3>Basic Build</h3>
+            <div class="price">$150 <span>+ Parts</span></div>
+          </div>
+          <ul class="price-features">
+            <li><i class="fas fa-check"></i> Professional Assembly</li>
+            <li><i class="fas fa-check"></i> Cable Management</li>
+            <li><i class="fas fa-check"></i> OS Installation</li>
+            <li><i class="fas fa-check"></i> 30-Day Support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline">Choose Basic</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="popular-tag">POPULAR</div>
+          <div class="price-header">
+            <h3>Pro Gamer</h3>
+            <div class="price">$250 <span>+ Parts</span></div>
+          </div>
+          <ul class="price-features">
+            <li><i class="fas fa-check"></i> Premium Assembly</li>
+            <li><i class="fas fa-check"></i> Advanced Cable Mgmt</li>
+            <li><i class="fas fa-check"></i> Overclocking Setup</li>
+            <li><i class="fas fa-check"></i> 1-Year Support</li>
+            <li><i class="fas fa-check"></i> RGB Sync</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Choose Pro</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="price-header">
+            <h3>Elite Station</h3>
+            <div class="price">$400 <span>+ Parts</span></div>
+          </div>
+          <ul class="price-features">
+            <li><i class="fas fa-check"></i> Custom Loop / High-End</li>
+            <li><i class="fas fa-check"></i> Stress Testing</li>
+            <li><i class="fas fa-check"></i> Benchmarking Report</li>
+            <li><i class="fas fa-check"></i> Lifetime Labor Warranty</li>
+            <li><i class="fas fa-check"></i> On-Site Setup (ATL)</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline">Choose Elite</a>
+        </div>
       </div>
     </section>
 
@@ -110,6 +172,19 @@
   </footer>
 
   <script src="main.js"></script>
+  <!-- Start of Tawk.to Script -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!-- End of Tawk.to Script -->
 </body>
 
 </html>
