@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dream PC Builder - TechBridge Atlanta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQV1J8NFHR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZQV1J8NFHR');
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="TechBridge-Atlanta.png" alt="TechBridge Atlanta Logo" class="logo-img">
+            <span class="site-title-small">TechBridge Atlanta</span>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card card-primary reveal">
+            <div class="heading-large">Build Your Dream PC</div>
+            <p>Tell us what you need, and we'll design the perfect rig for you.</p>
+
+            <form method="POST" action="mailto:atl772880@gmail.com" enctype="text/plain" class="builder-form">
+                <div class="form-section">
+                    <div class="heading-med">1. Primary Use</div>
+                    <div class="radio-group">
+                        <label class="radio-card">
+                            <input type="radio" name="Usage" value="Gaming" checked>
+                            <i class="fas fa-gamepad"></i>
+                            <span>Gaming</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="Usage" value="Workstation">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Workstation</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="Usage" value="Streaming">
+                            <i class="fas fa-video"></i>
+                            <span>Streaming</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="heading-med">2. Budget Range</div>
+                    <div class="form-group">
+                        <select name="Budget" class="form-select">
+                            <option value="$800 - $1200">Entry Level ($800 - $1200)</option>
+                            <option value="$1200 - $2000" selected>Mid Range ($1200 - $2000)</option>
+                            <option value="$2000 - $3500">High End ($2000 - $3500)</option>
+                            <option value="$3500+">Unlimited / Enthusiast ($3500+)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="heading-med">3. Aesthetic Style</div>
+                    <div class="radio-group">
+                        <label class="radio-card">
+                            <input type="radio" name="Style" value="RGB Lighting" checked>
+                            <i class="fas fa-lightbulb"></i>
+                            <span>RGB Glow</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="Style" value="Stealth Black">
+                            <i class="fas fa-moon"></i>
+                            <span>Stealth Black</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="Style" value="Clean White">
+                            <i class="fas fa-snowflake"></i>
+                            <span>Clean White</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="heading-med">4. Your Details</div>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes" class="form-label">Any specific games or apps?</label>
+                        <textarea id="notes" name="Notes" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Get My
+                    Quote</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>TechBridge Atlanta</h4>
+                <p>Making technology simple, powerful, and accessible for everyone.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            &copy; 2025 TechBridge Atlanta. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <!-- Start of Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/69218377dadafd19601960f3/1jalej2u8';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!-- End of Tawk.to Script -->
+</body>
+
+</html>
