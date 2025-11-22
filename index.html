@@ -1,224 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>TechBridge Atlanta</title>
+  <title>TechBridge Atlanta - Premium Tech Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --blue-dark: #235390;
-      --blue-main: #49a6e9;
-      --blue-light: #d8ecfb;
-      --grey-bg: #f8fafd;
-      --radius: 16px;
-    }
-    body {
-      margin: 0;
-      font-family: 'Poppins', Arial, sans-serif;
-      background: var(--grey-bg);
-      color: #222;
-    }
-    header {
-      background: linear-gradient(90deg, var(--blue-dark) 70%, var(--blue-main) 100%);
-      color: #fff;
-      padding: 56px 18px 40px 18px;
-      text-align: center;
-      border-bottom-left-radius: var(--radius);
-      border-bottom-right-radius: var(--radius);
-      box-shadow: 0 5px 18px rgba(35,83,144,0.18);
-    }
-    .site-title {
-      font-size: 3rem;
-      font-weight: 700;
-      letter-spacing: .02em;
-      margin-bottom: 8px;
-    }
-    .site-subtitle {
-      font-size: 1.3rem;
-      font-weight: 500;
-      margin-bottom: 10px;
-      opacity: 0.95;
-    }
-    nav {
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      gap: 18px;
-      box-shadow: 0 2px 8px rgba(35,83,144,0.08);
-      border-radius: var(--radius);
-      margin: 0 18px;
-      position: relative;
-      top: -26px;
-      z-index: 4;
-      padding: 0 0 4px 0;
-    }
-    nav a {
-      color: var(--blue-dark);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.15em;
-      border-radius: var(--radius);
-      padding: 14px 32px 13px 32px;
-      letter-spacing: .01em;
-      transition: background 0.2s, color 0.2s;
-      display: inline-block;
-    }
-    nav a.active, nav a:hover {
-      background: var(--blue-light);
-      color: var(--blue-main);
-    }
-    main {
-      max-width: 1150px;
-      margin: 44px auto 32px auto;
-      padding: 32px 20px 16px 20px;
-      background: #fff;
-      border-radius: var(--radius);
-      box-shadow: 0 3px 18px rgba(35,83,144,0.13);
-      min-height: 600px;
-    }
-    .card-section {
-      background: var(--blue-light);
-      border-radius: var(--radius);
-      box-shadow: 0 2px 12px #49a6e922;
-      padding: 36px 32px 28px 32px;
-      margin-bottom: 34px;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .heading-large {
-      font-size: 2.3rem;
-      font-weight: 700;
-      margin-bottom: 13px;
-      letter-spacing: .01em;
-      color: var(--blue-dark);
-    }
-    .heading-med {
-      font-size: 1.37rem;
-      font-weight: 600;
-      margin-bottom: 12px;
-      margin-top: 18px;
-      color: var(--blue-main);
-      letter-spacing: 0;
-    }
-    .gallery {
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      margin: 28px 0;
-      flex-wrap: wrap;
-    }
-    .gallery img {
-      border-radius: var(--radius);
-      width: 285px;
-      height: 195px;
-      object-fit: cover;
-      box-shadow: 0 2px 16px #49a6e9aa;
-      background: #eaeaea;
-      margin-bottom: 10px;
-      transition: transform .2s;
-    }
-    .gallery img:hover {
-      transform: scale(1.04);
-      box-shadow: 0 6px 22px #23539044;
-    }
-    .btn-main {
-      display: inline-block;
-      background: var(--blue-main);
-      color: #fff !important;
-      padding: 17px 38px;
-      border-radius: var(--radius);
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin: 24px 0;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      box-shadow: 0 1px 8px #49a6e953;
-      letter-spacing: .01em;
-      text-decoration: none;
-      transition: background 0.2s, color 0.2s;
-    }
-    .btn-main:hover {
-      background: var(--blue-dark);
-    }
-    .map-card {
-      padding: 0;
-      margin: 0 auto 36px auto;
-      box-shadow: 0 0 0 transparent;
-      background: transparent;
-    }
-    .section-spacer {
-      margin-top: 40px;
-    }
-    footer {
-      background: var(--blue-dark);
-      color: #fff;
-      text-align: center;
-      padding: 30px 0 10px 0;
-      border-top-right-radius: var(--radius);
-      border-top-left-radius: var(--radius);
-      font-size: 1.08rem;
-      margin: 0 14px;
-      letter-spacing: .01em;
-    }
-    @media (max-width: 900px) {
-      main {padding: 12px;}
-      .gallery { gap:16px;}
-      .gallery img {width: 90vw; max-width: 320px; height: 31vw; max-height: 180px;}
-      .card-section {padding:16px;}
-      .heading-large {font-size:1.6rem;}
-    }
-    @media (max-width: 555px) {
-      nav {flex-direction: column;gap:1px;}
-      nav a {padding: 13px 0;}
-      .heading-large {font-size:1.25rem;}
-      .card-section {padding:11px;}
-      main {padding:5px;}
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
-    <img src="TechBridge-Atlanta.png" alt="TechBridge Atlanta Logo" style="height:180px; margin-bottom:10px; border-radius:20px; display:block; margin-left:auto; margin-right:auto;">
-    <div class="site-subtitle">Home</div>
+    <div class="logo-container">
+      <img src="TechBridge-Atlanta.png" alt="TechBridge Atlanta Logo" class="logo-img">
+      <span class="site-title-small">TechBridge Atlanta</span>
+    </div>
+    <button class="mobile-menu-btn" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-    <section class="card-section">
-      <div class="heading-large">Welcome to TechBridge Atlanta</div>
-      <p style="font-size:1.11rem;">
-        <b>We make technology simple, powerful, and accessible</b> for everyone in Atlanta. Our passion—your success. Whether you need the ultimate PC for gaming or business, efficient software installation, or AI-driven solutions, we deliver with expertise and heart. 
-      </p>
-    </section>
-<section>
-  <div class="heading-med">Our PC Builds Gallery</div>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1705495013102-14d7248934f6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1674" alt="Custom Gaming PC Build 1">
-    <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1674" alt="Custom Gaming PC Build 2">
-    <img src="https://images.unsplash.com/photo-1660855551740-4474188debdb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2071" alt="Custom Gaming PC Build 3">
+  <div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <h1 class="hero-title">Technology Made Simple, Powerful, & Accessible</h1>
+      <p class="hero-subtitle">Expert PC Builds, Software Solutions, and Tech Support for Atlanta.</p>
+      <a href="services.html" class="btn btn-primary">Explore Services</a>
+      <a href="contact.html" class="btn btn-outline" style="margin-left: 1rem;">Get in Touch</a>
+    </div>
   </div>
-</section>
 
-    <section class="card-section map-card">
-      <div class="heading-med">Atlanta, Georgia – Our Home Base</div>
-      <p style="margin-bottom:20px;">We’re proud to serve Atlanta and help our neighbors thrive with advanced tech solutions.</p>
-      <iframe src="https://www.google.com/maps?q=Atlanta,GA&hl=en&z=12&output=embed" width="100%" height="310" style="border:0; border-radius: var(--radius);" allowfullscreen loading="lazy"></iframe>
+  <main>
+    <section class="reveal">
+      <div class="heading-large">Why Choose TechBridge?</div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-microchip feature-icon"></i>
+          <h3>Expert Builds</h3>
+          <p>Custom PCs tailored to your exact needs, from high-end gaming to professional workstations.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-rocket feature-icon"></i>
+          <h3>Fast Turnaround</h3>
+          <p>We know you need your tech fast. We pride ourselves on quick, reliable service.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-heart feature-icon"></i>
+          <h3>Local Support</h3>
+          <p>Proudly serving the Atlanta community with personal, friendly tech support.</p>
+        </div>
+      </div>
     </section>
-    <div style="text-align:center;" class="section-spacer">
-      <a href="contact.html" class="btn-main">Contact Us Today</a>
+  </main>
+
+  <div class="stats-section reveal">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">PCs Built</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">5+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="reveal" style="margin-top: 5rem;">
+      <div class="heading-med" style="text-align: center;">Our PC Builds Gallery</div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1705495013102-14d7248934f6?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1674"
+            alt="Custom Gaming PC Build 1">
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1674"
+            alt="Custom Gaming PC Build 2">
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1660855551740-4474188debdb?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2071"
+            alt="Custom Gaming PC Build 3">
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="heading-large">What Our Clients Say</div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"TechBridge built me the ultimate gaming rig. It runs everything on ultra
+            settings and looks amazing. Highly recommend!"</div>
+          <div class="testimonial-author"><i class="fas fa-user-circle"></i> Alex J.</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"Fast, professional, and super helpful. They recovered my data when I thought
+            it was lost forever. Thank you!"</div>
+          <div class="testimonial-author"><i class="fas fa-user-circle"></i> Sarah M.</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"The best tech support in Atlanta. They explained everything simply and got my
+            business network running smoothly."</div>
+          <div class="testimonial-author"><i class="fas fa-user-circle"></i> David R.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card reveal">
+      <div class="heading-med">Visit Our Atlanta HQ</div>
+      <p>We’re proud to serve Atlanta and help our neighbors thrive with advanced tech solutions.</p>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps?q=Atlanta,GA&hl=en&z=12&output=embed" width="100%" height="350"
+          style="border:0;" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <div style="text-align:center; margin-top: 4rem;" class="reveal">
+      <a href="contact.html" class="btn btn-primary">Start Your Project</a>
     </div>
   </main>
+
   <footer>
-    &copy; 2025 TechBridge Atlanta. All Rights Reserved.
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4>TechBridge Atlanta</h4>
+        <p>Making technology simple, powerful, and accessible for everyone.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect With Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+      &copy; 2025 TechBridge Atlanta. All Rights Reserved.
+    </div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
+
 </html>
